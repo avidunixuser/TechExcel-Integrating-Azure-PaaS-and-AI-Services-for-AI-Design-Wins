@@ -76,28 +76,28 @@ app.MapGet("/", async () =>
     .WithOpenApi();
 
 // Retrieve the set of hotels from the database.
-app.MapGet("/Hotels", async () => 
-{
-    throw new NotImplementedException();
-})
-    .WithName("GetHotels")
-    .WithOpenApi();
+// app.MapGet("/Hotels", async () => 
+// {
+//     throw new NotImplementedException();
+// })
+//     .WithName("GetHotels")
+//     .WithOpenApi();
 
 // Retrieve the bookings for a specific hotel.
-app.MapGet("/Hotels/{hotelId}/Bookings/", async (int hotelId) => 
-{
-    throw new NotImplementedException();
-})
-    .WithName("GetBookingsForHotel")
-    .WithOpenApi();
+// app.MapGet("/Hotels/{hotelId}/Bookings/", async (int hotelId) => 
+// {
+//     throw new NotImplementedException();
+// })
+//     .WithName("GetBookingsForHotel")
+//     .WithOpenApi();
 
 // Retrieve the bookings for a specific hotel that are after a specified date.
-app.MapGet("/Hotels/{hotelId}/Bookings/{min_date}", async (int hotelId, DateTime min_date) => 
-{
-    throw new NotImplementedException();
-})
-    .WithName("GetRecentBookingsForHotel")
-    .WithOpenApi();
+// app.MapGet("/Hotels/{hotelId}/Bookings/{min_date}", async (int hotelId, DateTime min_date) => 
+// {
+//     throw new NotImplementedException();
+// })
+//     .WithName("GetRecentBookingsForHotel")
+//     .WithOpenApi();
 
 // This endpoint is used to send a message to the Azure OpenAI endpoint.
 app.MapPost("/Chat", async Task<string> (HttpRequest request) =>
